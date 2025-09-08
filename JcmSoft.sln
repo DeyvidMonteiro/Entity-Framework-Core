@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcmSoft.Console", "JcmSoft.Console\JcmSoft.Console.csproj", "{6B165C8A-9A98-4CEC-89C6-FA4DC8D7CE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcmSoft.Domain", "JcmSoft.Domain\JcmSoft.Domain.csproj", "{19A14B56-8353-4067-8C13-3F74CCCD8C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcmSoft.EFCore", "JcmSoft.EFCore\JcmSoft.EFCore.csproj", "{E6456573-3CD4-4F36-954D-E11976FCCAC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6B165C8A-9A98-4CEC-89C6-FA4DC8D7CE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B165C8A-9A98-4CEC-89C6-FA4DC8D7CE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B165C8A-9A98-4CEC-89C6-FA4DC8D7CE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A14B56-8353-4067-8C13-3F74CCCD8C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A14B56-8353-4067-8C13-3F74CCCD8C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A14B56-8353-4067-8C13-3F74CCCD8C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A14B56-8353-4067-8C13-3F74CCCD8C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6456573-3CD4-4F36-954D-E11976FCCAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6456573-3CD4-4F36-954D-E11976FCCAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6456573-3CD4-4F36-954D-E11976FCCAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6456573-3CD4-4F36-954D-E11976FCCAC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

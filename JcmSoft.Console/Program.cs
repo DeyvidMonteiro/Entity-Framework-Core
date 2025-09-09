@@ -10,8 +10,22 @@ using (AppDbContext context = new AppDbContext())
     Console.WriteLine("Criando um departamento...\n");
     CriarDepartamento(context);
     Console.WriteLine("Departamento criado... \n");
-}
 
+
+    Console.WriteLine("retornandos todos os departamentos usando toList");
+    var departamentos = context.Departamentos.ToList();
+
+    foreach (var item in departamentos) Console.WriteLine($"ID :{item.DepartamentoId}, Nome: {item.Nome}");
+
+    Console.ReadKey();
+
+    Console.WriteLine("\nretornando apenas um departamento usando FirstOrDefault");
+    var departamento = context.Departamentos.FirstOrDefault(d => d.DepartamentoId == 8);
+
+    if (departamento != null) Console.WriteLine($"ID :{departamento.DepartamentoId}, Nome: {departamento.Nome}");
+    else Console.WriteLine("Departamento nao encontrado");
+
+}
 
 Console.ReadKey();
 void CriarDepartamento(AppDbContext context)

@@ -16,12 +16,13 @@ using (AppDbContext context = new AppDbContext())
 Console.ReadKey();
 void CriarDepartamento(AppDbContext context)
 {
-    var departamento = new Departamento
+    var departamentos = new List<Departamento>
     {
-        Name = "Desenvolvimento",
-        Descricao = "Desenvolvimento de projetos"
+        new Departamento{ Nome = "Finanças", Descricao = "Gestão de Finanças" },
+        new Departamento{ Nome = "Marketing", Descricao = "Promoção de produtos" },
+        new Departamento{ Nome = "RH", Descricao = "Recursos Humanos" },
     };
 
-    context.Add(departamento);
+    context.Departamentos.AddRange(departamentos);
     context.SaveChanges();
 }

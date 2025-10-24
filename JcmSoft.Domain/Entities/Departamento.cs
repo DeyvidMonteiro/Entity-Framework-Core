@@ -8,4 +8,7 @@ public class Departamento
     public string Descricao { get; set; } = string.Empty;
     public DateTime DataCriacao {  get; set; }
 
+    // propriedade de navegação de coleção
+    public ICollection<Funcionario> Funcionarios { get; set; } = [];
+
 }
